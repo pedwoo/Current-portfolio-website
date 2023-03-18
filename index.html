@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width"/>
+
+        <meta name="keywords" content="web developer, web development agency, website developer, web designer, web design"/>
+
+        <!-- <base href="https://www.danielepedrolli.online"/> -->
+
+        <link rel="stylesheet" type="text/css" href="css/_reset.css"/>
+        <link rel="stylesheet" type="text/css" href="css/_style.css"/>
+        <!-- <link rel="icon" type="image/x-icon" href="images/icons/_logo.png"/> -->
+        <script defer type="text/javascript" src="javascript/script.js"></script>
+        <script src="https://kit.fontawesome.com/486baf3c59.js" crossorigin="anonymous"></script>
+
+
+        <title>Daniele Pedrolli - Web developer</title>
+    </head>
+    <body onload="loader(0);">
+        <!-- THIS IS THE NAVIGATION SECTION -->
+        <nav id="nav" class="navigation-wrapper" aria-label="primary menu" data-menu="closed" data-style="none" data-prev__state="none">
+            <a href="index.html"><span>{/}</span><span>&nbspDanielepedrolli.online</span></a>
+            <ul class="menu">
+                <div class="menu-selector"></div>
+
+                <li class="menu-item pointer" onmouseover="menu_item_hover(0);" onmouseout="menu_item_out(0)"><a aria-current="page" href="#home">Home</a></li>
+                <li class="menu-item pointer" onmouseover="menu_item_hover(1);" onmouseout="menu_item_out(0)"><a aria-current="page" href="#work">Work</a></li>
+                <li class="menu-item pointer" onmouseover="menu_item_hover(2);" onmouseout="menu_item_out(0)"><a aria-current="page" href="#work-presentation">About</a></li>
+                <li class="menu-item pointer contact-button"><a aria-current="page" href="#home">Contact</a></li>
+
+                <div class="mobile-menu" onclick="popup_menu();">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </ul>
+        </nav>
+
+        <!-- THIS IS THE POPUP MENU SECTION -->
+        <div id="popup-menu"></div>
+        <ul id="popup-menu-inner">
+            <!-- <div class="menu-selector"></div> -->
+            <li class="pointer" onclick="close_popup_menu();"><a aria-current="page" href="#home">01__&nbsp&nbspHome</a></li>
+            <li class="pointer" onclick="close_popup_menu();"><a aria-current="page" href="#work">02__&nbsp&nbspWork</a></li>
+            <li class="pointer" onclick="close_popup_menu();"><a aria-current="page" href="#work-presentation">03__&nbsp&nbspAbout</a></li>
+            <li class="pointer" onclick="close_popup_menu();"><a aria-current="page" href="#home">Get&nbspin&nbsptouch</a></li>
+        </ul>
+        <div id="social-media-menu-bar" class="social-media-menu-bar">
+            <a href="#">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-dribbble"></i>
+            </a>
+        </div>
+
+        <!-- THIS IS THE BANNER SECTION -->
+        <div id="home" class="pattern-background banner-wrapper">
+            <div class="banner-inner">
+                <div class="banner-col">
+                    <div class="overflow-wrapper">
+                        <h1 class="h hidden-b-l">Hi. I am <span class="purple">Dan</span></h1>
+                    </div>
+                    <h3>
+                        <div class="pointer down-button-wrapper">
+                            <a href="#presentation" class="h hdelay-ll down-button pointer">
+                                <span></span>
+                                <span></span>
+                            </a>
+                        </div>
+                        <p class="h hdelay-l hidden-b">I am an Italian based web developer and UI designer<br/>
+                        &nbsp&nbsp(I make websites)</p>
+                    </h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- THIS IS THE PRESENTATION SECTION -->
+        <div id="presentation" class="grey-dark--wrapper presentation-wrapper">
+            <div class="presentation-inner">
+                <div class="presentation-col">
+                    <h2>I turn ideas into websites</h2>
+                    <p class="h left-bar">I believe that a captivating design serves as the foundation to create a positive and lasting first impression.</p>
+                    <p class="h">
+                        <!-- Hi, I am Daniele Pedrolli, I am a front-end developer and UI designer from Italy. I offer a blend of technical proficiency and artistic skill to each of your projects, with the aim of designing user experiences that are both functional and visually appealing. -->
+                        As a front-end developer, my main objective is to help you establish a strong online presence and make you stand out, to attract the right audience.
+                    </p>
+                </div>
+                <!-- <p class="h hdelay hidden-b"></p> -->
+                <div class="h hidden-b presentation-col">
+                    <p class="h hdelay-l">Here are the main technologies I have worked with during my time in the industry.</p>
+                    <div class="h hdelay-ll tech-stack">
+                        <i class="fa-brands fa-html5"></i>
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <i class="fa-brands fa-square-js"></i>
+                        <i class="fa-brands fa-git-alt"></i>
+                        <i class="fa-brands fa-bootstrap"></i>
+                        <!-- <i class="fa-brands fa-sass"></i> -->
+                        <!-- <i class="fa-brands fa-node-js"></i> -->
+                        <!-- <i class="fa-brands fa-react"></i> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grey--wrapper">
+            <!-- THIS IS THE SERVICES SECTION -->
+            <div id="services" class="presentation-wrapper">
+                <h1>Services I provide</h1>
+                <div class="services-inner">
+                    <!-- <div class="h hdelay-l service" data-hovervalue="purple" data-clickable="false">
+                        <h5>01</h5>
+                        <h2>PROTOTYPING</h2>
+                        <p>I design, build and test front-end web applications, to make sure they are flawless and meet your requirements and business objectives.</p>
+                        <a href="#presentation">View projects
+                            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 48 48"><path d="m29.95 39.25-3.35-3.3 9.55-9.6h-33v-4.7h33L26.6 12l3.35-3.3L45.2 24Z"/></svg>
+                        </a>
+                    </div> -->
+                    <div class="h hidden-b service">
+                        <!-- <h5>01</h5> -->
+                        <div class="icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 48 48"><path d="m19.2 36.4-4.75-10.45L4 21.2l10.45-4.75L19.2 6l4.75 10.45L34.4 21.2l-10.45 4.75ZM36.4 42l-2.35-5.25-5.25-2.35 5.25-2.4 2.35-5.2 2.4 5.2 5.2 2.4-5.2 2.35Z"/></svg>
+                        </div>
+                        <h2>BRANDING</h2>
+                        <p>A well-established and coherent brand identity is crucial for success, and I make sure it stays that way throughout all of my products and designs.</p>
+                        <a href="#work">View projects
+                            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 48 48"><path d="m29.95 39.25-3.35-3.3 9.55-9.6h-33v-4.7h33L26.6 12l3.35-3.3L45.2 24Z"/></svg>
+                        </a>
+                    </div>
+                    <div class="h hdelay hidden-b service">
+                        <!-- <h5>02</h5> -->
+                        <div class="icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 48 48"><path d="M12 22q-4.15 0-7.075-2.925T2 12q0-4.2 2.925-7.1Q7.85 2 12 2q4.2 0 7.1 2.9Q22 7.8 22 12q0 4.15-2.9 7.075T12 22Zm19 24q-1.25 0-2.125-.875T28 43V31q0-1.25.875-2.125T31 28h12q1.25 0 2.125.875T46 31v12q0 1.25-.875 2.125T43 46Zm4.75-31.6L14.4 35.7q.35.6.525 1.275.175.675.175 1.425 0 2.25-1.6 3.875T9.6 43.9q-2.25 0-3.875-1.625T4.1 38.4q0-2.3 1.625-3.9T9.6 32.9q.75 0 1.425.175t1.275.525l21.3-21.35q-.35-.6-.525-1.275Q32.9 10.3 32.9 9.6q0-2.3 1.625-3.9T38.4 4.1q2.3 0 3.9 1.6t1.6 3.9q0 2.25-1.6 3.875T38.4 15.1q-.7 0-1.375-.175T35.75 14.4Z"/></svg>
+                        </div>
+                        <h2>UI/UX DESIGN</h2>
+                        <p>As a web designer, I make sure the interfaces I create are original and intriguing, to attract a wider audience and keep the viewers engaged.</p>
+                        <a href="#work">View projects
+                            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 48 48"><path d="m29.95 39.25-3.35-3.3 9.55-9.6h-33v-4.7h33L26.6 12l3.35-3.3L45.2 24Z"/></svg>
+                        </a>
+                    </div>
+                    <div class="h hdelay-l hidden-b service">
+                        <!-- <h5>03</h5> -->
+                        <div class="icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 48 48"><path d="M20 44V28h-6V4h20l-4 14h8Z"/></svg>
+                        </div>
+                        <h2>DEVELOPMENT</h2>
+                        <p>Development includes the creation of a functional and visually appealing website, as well as the the deploy so you can get started as soon as possible.</p>
+                        <a href="#work">View projects
+                            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 48 48"><path d="m29.95 39.25-3.35-3.3 9.55-9.6h-33v-4.7h33L26.6 12l3.35-3.3L45.2 24Z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- THIS IS THE WORK PRESENTATION SECTION -->
+            <div id="work-presentation" class="work-presentation-wrapper">
+                <div class="work-presentation-inner">
+                    <img id="left-image" class="h hidden-l" src="./images/mockups/realistic-1.png" alt="">
+                    <div class="col-container">
+                        <h1 class="h">Building digital products, brands and experiences</h1>
+                        <h3 class="h">As a web designer and developer, my primary objective is to create designs that not only look aesthetically pleasing but also tell a story.</h3>
+                        <h3 class="h">I believe that an effective design can communicate a message more powerfully than any words can.</h3>
+                        <h3 class="h hdelay">By working closely with my clients, I aim to exceed their expectations and help them achieve their business goals through effective web design and development.</h3>
+                        <a class="h hdelay-l hidden-r pointer" href="#presentation" class="pointer">More about me
+                            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 48 48"><path d="m29.95 39.25-3.35-3.3 9.55-9.6h-33v-4.7h33L26.6 12l3.35-3.3L45.2 24Z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- THIS IS THE SELECTED WORK SECTION -->
+        <div class="grey-dark--wrapper">
+            <div id="work" class="work-wrapper">
+                <div class="work-inner">
+                    <div class="work-header">
+                        <h1>My latest work</h1>
+                        <a class="pointer" href="#presentation">Browse portfolio</a>
+                    </div>
+                    <div class="work-body">
+                        <div class="h hidden-b-ll work">
+                            <div class="image-wrapper">
+                                <img src="./images/projects/qkdpergine/qkdpergine-banner7.png" alt="Qwan ki do website"/>
+                                <div class="tags-wrapper">
+                                    <span class="tag">Html</span>
+                                    <span class="tag">Css</span>
+                                    <span class="tag">Js</span>
+                                </div>
+                            </div>
+                            <div class="work-caption">
+                                <h2>NHA LONG QWAN KI DO</h2>
+                                <div class="work-buttons">
+                                    <!-- <a href="#">
+                                        <i class="fa-regular fa-file-lines"></i>
+                                    </a> -->
+                                    <a href="https://kungfupergine.it" target="_blank">
+                                        <i class="fa-solid fa-globe"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                </div>
+                                <h3>Full website redesign</h3>
+                            </div>
+                        </div>
+                        <div class="h hidden-b-ll work coming-soon">
+                        </div>
+                        <div class="h hidden-b-ll hdelay-ll work coming-soon">
+                        </div>
+                        <div class="h hidden-b-ll work coming-soon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- THIS IS THE CONTACT ME SECTION -->
+            <div id="contacts" class="contact-wrapper">
+                <div class="h hidden-l contact-inner">
+                    <div id="form-submitted">
+                        <div class="icon-wrapper">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <h4>YOUR MESSAGE HAS BEEN SENT!</h4>
+                    </div>
+                    <div class="contact-col">
+                        <h1 class="h hdelay hidden-l">Already have an idea?<br/>Let's get in touch!</h1>
+                        <form id="contact-form" class="h hdelay-l contact-form" name="Home page form" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+                            <p class="hidden">
+                                <label>
+                                    Don’t fill this out if you’re human: <input name="bot-field" />
+                                </label>
+                            </p>
+                            <label for="name">
+                                Full name
+                            </label>
+                            <input class="field" type="text" name="name" placeholder="Full name" required/>
+                            <label for="email">
+                                Email
+                            </label>
+                            <input class="field" type="email" name="email" placeholder="Email" required/>
+                            <label for="message">
+                                Message
+                            </label>
+                            <textarea class="field" name="message" placeholder="Tell me about your project" required></textarea>
+                            <div class="h hdelay-l form-footer">
+                                <div class="form-buttons">
+                                    <a href="#">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                    <!-- <a href="#">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a> -->
+                                    <a href="#">
+                                        <i class="fa-brands fa-dribbble"></i>
+                                    </a>
+                                </div>
+                                <button class="pointer" type="submit">Get started</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="contact-col">
+                        <img src="./images/mockups/iphone1.png" alt="Iphone" draggable="false"/>
+                    </div>
+                </div>
+            </div>
+
+            <!-- THIS IS THE UPCOMING CODE PENS SECTION -->
+            <div class="pens-wrapper">
+                <div class="pens-inner">
+                    <div class="pens-header">
+                        <h1>Explore my CodePen snippets</h1>
+                        <a class="pointer" href="#">Browse all</a>
+                    </div>
+                    <div class="pens-mosaic">
+                        <div class="h hidden-l pen"></div>
+                        <div class="h hdelay hidden-t pen"></div>
+                        <div class="h hidden-t pen"></div>
+                        <div class="h hdelay-ll pen"></div>
+                        <div class="h hidden-r pen"></div>
+                        <div class="h hdelay hidden-b pen"></div>
+                        <div class="h hidden-r pen"></div>
+                        <div class="h hdelay-ll hidden-t pen"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- THIS IS THE FOOTER SECTION -->
+        <div id="footer" class="footer-wrapper">
+            <div class="footer-inner">
+                <h1 class="h">Let's create something amazing</h1>
+                <div class="footer-row">
+                    <h2 class="h hidden-b">For any inquiries - please do not hesitate to contact me</h3>
+                    <a href="#" class="pointer">Get started</a>
+                </div>
+                <div class="h hdelay form-buttons">
+                    <a href="#">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <!-- <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a> -->
+                    <a href="#">
+                        <i class="fa-brands fa-dribbble"></i>
+                    </a>
+
+                    <a href="#" class="pointer">Get&nbspstarted</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
